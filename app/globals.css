@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: rgb(9, 18, 66);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 18, 66, 1) 56%,
+    rgba(1, 4, 21, 0.9809173669467787) 90%
+  );
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffb82b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffb82b;
+}
+
+::-webkit-scrollbar-track {
+  background: #091242;
+}
+/* scrollbar */
+
+/* global */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #1c1f35;
+}
+p {
+  font-size: 1.2rem;
+}
+/* global */
+
+/* color */
+.font-color {
+  color: #f4f4f4b0;
+}
+
+.sec-color {
+  color: #ffb82b;
+}
+
+.p-color {
+  color: #666c89;
+}
+.font-primary {
+  color: #1c1f35;
+}
+.bg-main {
+  background: #091242;
+}
+.section-bg {
+  background: #f4f4f4;
+}
+.bg-sec {
+  background: rgba(9, 18, 66, 0.25);
+}
+.bg-gradient {
+  background: linear-gradient(
+    94deg,
+    #ffb629 -1.21%,
+    #ffda56 50.75%,
+    #ffd7a6 102.71%
+  );
+}
+.active {
+  background: linear-gradient(
+    94deg,
+    #ffb629 -1.21%,
+    #ffda56 50.75%,
+    #ffd7a6 102.71%
+  );
+
+  color: #1c1f35;
+
+  @apply px-3 py-1 text-base font-medium rounded;
+}
+.section-heading {
+  font-size: 18px;
+  @apply bg-[#E8E8E880] w-fit text-black relative px-2 ml-2;
+  font-weight: 500;
+}
+.section-heading::before {
+  content: "";
+  background: linear-gradient(
+    94deg,
+    #ffb629 -1.21%,
+    #ffda56 50.75%,
+    #ffd7a6 102.71%
+  );
+  width: 7px;
+  height: 27px;
+  position: absolute;
+  left: -6px;
+}
+.gradient-bg {
+  background: rgb(9, 18, 66);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 18, 66, 1) 56%,
+    rgba(1, 4, 21, 0.9809173669467787) 90%
+  );
+}
+.sticky-bottom-right{
+  position: fixed !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  padding: 15px !important;
+  width: fit-content !important;
+  background: transparent !important;
+  float: right !important;
+}
+.bottom-right-floating{
+  background: linear-gradient(
+    94deg,
+    #ffb629 -1.21%,
+    #ffda56 50.75%,
+    #ffd7a6 102.71%
+  );
+  margin-top: 14px;
+}
+
+
+.idea-bubble {
+  position: relative;
+  /*width: 200px;
+  height: 100px;*/
+background: linear-gradient(90deg, rgba(9, 18, 66, 1) 56%, rgba(1, 4, 21, 0.9809173669467787) 90%);
+    border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.idea-bubble:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 18%;
+  margin-left: -15px; /* Adjust this value based on the size of the bubble */
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #0b0a34 transparent transparent; /* Light blue, same as background color */
+  display: block;
+  width: 0;
+}

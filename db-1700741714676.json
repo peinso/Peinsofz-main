@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "id": "1",
+      "imgSrc": "/ship.svg",
+      "imgAlt": "ship",
+      "title": "Sea Transport Services",
+      "description": "Following the quality of our service thus having gained trust of our many clients.",
+      "animation": "fade-right",
+      "serviceId": "sea-transport"
+    },
+    {
+      "id": "2",
+      "imgSrc": "/plane.svg",
+      "imgAlt": "plane",
+      "title": "Air Transport Services",
+      "description": "Providing high quality air transport services for our clients.",
+      "animation": "fade-left",
+      "serviceId": "air-transport"
+    },
+    {
+      "id": "3",
+      "imgSrc": "/truck.svg",
+      "imgAlt": "truck",
+      "title": "Road Transport Services",
+      "description": "Ensuring timely and safe delivery of goods with our road transport services.",
+      "animation": "fade-right",
+      "serviceId": "road-transport"
+    },
+    {
+      "id": "4",
+      "imgSrc": "/train.svg",
+      "imgAlt": "train",
+      "title": "Rail Transport Services",
+      "description": "Offering reliable and efficient rail transport services for bulk goods.",
+      "animation": "fade-left",
+      "serviceId": "rail-transport"
+    }
+  ]
+}
